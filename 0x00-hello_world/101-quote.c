@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	write(STDOUT_FILENO, "and that piece of art is useful\"",59);
-	write(STDOUT_FILENO, " - Dora Korpar, 2015-10-19\n", 59);
+	write(STDOUT_FILENO, "and that piece of art is useful\"", 32);
+	write(STDOUT_FILENO, " - Dora Korpar, 2015-10-19\n", 27);
 	return (1);
 }
