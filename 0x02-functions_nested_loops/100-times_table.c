@@ -1,11 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 
-
 /**
- * print_to_98 - prints all natural numbers from n to 98,
- * followed by a new line
- * @n: print from this number
+ * print_times_table - prints times table
+ * @n : times table to use
+ * Return:void
  */
 
 void print_times_table(int n)
