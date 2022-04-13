@@ -1,0 +1,128 @@
+    1  clear 
+    2  cd ..
+    3  ls -l
+    4  cd vagrant
+    5  ls -
+    6  ls -l
+    7  alx-low_level_programing
+    8  alx-low_level_programming
+    9  cd alx-low_level_programming
+   10  ls -l
+   11  git pull 
+   12  ls -l
+   13  cd 0x02-functions_nested_loops
+   14  ls -l
+   15  git status
+   16  git restore *
+   17  git status
+   18  git add .
+   19  git commit -m "PUshing changes not staged after cloning"
+   20  git push
+   21  git config --global credential.helper store
+   22  git status
+   23  git restore .
+   24  git status
+   25  git add ../0x00-hello_world/2-assembler
+   26  git add ../0x00-hello_world/main.c
+   27  git add ../0x00-hello_world/main.s
+   28  git add ../0x01-variables_if_else_while/a.out
+   29  git commit -m "Bringing remote and local to files on the same level"
+   30  git push
+   31  git config --global credential.helper. store
+   32  git config --global credential.helper store
+   33  git push
+   34  git status
+   35  git add ../0x01-variables_if_else_while/2-print_alphabet.c
+   36  git add  ../0x00-hello_world/cisfun
+   37  git commit -m "Bringing remote and local to files on the same level"
+   38  git config --global user.email "ineuwelt@neuwelt.co"
+   39  git config --global user.name "neuwelt"
+   40  git config --global credential.helper store
+   41  git push
+   42  git status
+   43  git remote
+   44  git status
+   45  git push
+   46  git clean 
+   47  git clean  -fd
+   48  git status
+   49  cd ..
+   50  git push
+   51  git status
+   52  git fetch
+   53  git status
+   54  git pull
+   55  git status
+   56  git fetch
+   57  git status
+   58  git fetch origin master
+   59  git status
+   60  git diff HEAD FETCH_HEAD
+   61  git branch -vv
+   62  git status
+   63  git add .
+   64  git commit -m "Just saying"
+   65  git push
+   66  git status
+   67  ls -l
+   68  cd 0x02-functions_nested_loops
+   69  ls -l
+   70  vi 1-alphabet.c
+   71  chmod u+x 1-alphabet.c
+   72  betty 1-alphabet.c
+   73  cd ..
+   74  ls -l
+   75  cd Betty
+   76  ls -l
+   77  sudo ./install.sh
+   78  vi betty
+   79  chmod a+x betty
+   80  pwd
+   81  mv betty ../../bin/
+   82  sudo mv betty ../../bin/
+   83  ls -l
+   84  cd ..
+   85  ls -l
+   86  cd bin
+   87  ls -l
+   88  cd ..
+   89  ls -l
+   90  cd vagrant
+   91  ls -l
+   92  cd alx-low_level_programming
+   93  ls -l
+   94  cd 0x02-functions_nested_loops
+   95  ls -l
+   96  betty 1-alphabet.c
+   97  git add .
+   98  git commit -m "Print the alphabet with a function"
+   99  git push
+  100  git remote set-url origin https://github.com/neuwelt/alx-low_level_programming.git 
+  101  git --config user.email "ineuwelt@neuwelt.co"
+  102  git user.email
+  103  git --help
+  104  git push
+  105  git remote set-url origin https://github.com/neuwelt/alx-low_level_programming.git 
+  106  git push
+  107  git remote
+  108  git remote add origin https://github.com/neuwelt/alx-low_level_programming.git 
+  109  git config --global --unset http.proxy
+  110  git config --global --unset https.proxy
+  111  git remote add origin https://github.com/neuwelt/alx-low_level_programming.git 
+  112  git push
+  113  netsh int ip reset
+  114  git remote set-url origin https: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//github.com/neuwelt/alx-low_level_programming.git 
+  115  git remote
+  116  git status
+  117  git push
+  118  git remote -v
+  119  git add .
+  120  git push
+  121  git https://github.com/neuwelt/alx-low_level_programming.git
+  122  git set-url https://github.com/neuwelt/alx-low_level_programming.git
+  123  git remote set-url https://github.com/neuwelt/alx-low_level_programming.git
+  124  git remote set-url --push https://github.com/neuwelt/alx-low_level_programming.git
+  125  git remote set-url --push origin https://github.com/neuwelt/alx-low_level_programming.git
+  126  git remote -v
+  127  git push
+  128  history > terminal_history.txt
