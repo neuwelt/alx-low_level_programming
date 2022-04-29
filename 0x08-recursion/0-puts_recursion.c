@@ -8,13 +8,11 @@
 
 void _puts_recursion(char *s)
 {
-	/* '\0' NULL Character/Terminator Marks Line End */
 	if (*s == '\0')
 	{
-		_putchar("\n");
+		_putchar('\n');
 		return;
 	}
-
-	putchar(*s);
+	_putchar(*s);
 	_puts_recursion(s + 1);
 }
