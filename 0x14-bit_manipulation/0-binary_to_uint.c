@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * binary_to_unit - Function to convert a binary number to an unsigned int
+ * binary_to_uint - Function to convert a binary number to an unsigned int
  * @b: Is pointing to a string of 0 and 1 chars
  * Return: Converted value, 0
  */
 
-unsigned int binary_to_unit(const char *b)
+unsigned int binary_to_uint(const char *b)
 {
-	unsigned int val = 0;
+	unsigned int d_val = 0;
 	int i = 0;
 
 	if (b == NULL)
@@ -16,9 +16,9 @@ unsigned int binary_to_unit(const char *b)
 
 	while (b[i] == '0' || b[i] == '1')
 	{
-		val <<= 1;
-		val += b[i] - '0';
+		d_val <<= 1;
+		d_val += b[i] - '0';
 		i++;
 	}
-	return (val);
+	return (d_val);
 }
