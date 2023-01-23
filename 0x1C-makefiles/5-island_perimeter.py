@@ -1,28 +1,36 @@
 #!/usr/bin/python3
-"""Defines an island perimeter measuring function."""
+"""
+Module Island Perimeter
+"""
 
 
 def island_perimeter(grid):
-    """Return the perimiter of an island.
+    """ Calculate perimeter of grid where "1" is found"""
+    p = 0
+    for row in range(len(grid)):
+        for col in range(len(grid[0])):
+            if grid[row][col] == 1:
+                if row == 0 or grid[row - 1][col] == 0:
+                    p += 1  # top
+                if row == (len(grid) - 1) or grid[row + 1][col] == 0:
+                    p += 1  # bottom
+                if col == 0 or grid[row][col - 1] == 0:
+                    p += 1  # left
+                if col == (len(grid[0]) - 1) or grid[row][col + 1] == 0:
+                    p += 1  # right
+    return p
 
-    The grid represents water by 0 and land by 1.
 
-    Args:
-        grid (list): A list of list of integers representing an island.
-    Returns:
-        The perimeter of the island defined in grid.
-    """
-    width = len(grid[0])
-    height = len(grid)
-    edges = 0
-    size = 0
-
-    for i in range(height):
-        for j in range(width):
-            if grid[i][j] == 1:
-                size += 1
-                if (j > 0 and grid[i][j - 1] == 1):
-                    edges += 1
-                if (i > 0 and grid[i - 1][j] == 1):
-                    edges += 1
-    return size * 4 - edges * 2
+# Method for rectangular island only, no odd shapes
+#    maxWidth = 0
+#    length = 0
+#    for i in range(len(grid)):
+#        width = 0
+#        for j in range(len(grid[0])):
+#            if grid[i][j] == 1:
+#                width += 1
+#        if width:
+#            length += 1
+#        if width > maxWidth:
+#            maxWidth = width
+#    return ((maxWidth + length) * 2)
